@@ -1,0 +1,19 @@
+{
+  "name": "projeto_station_one",
+  "version": "1.0.0",
+  "description": "Projeto Station One",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Levi Lucas",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.1"
+  },
+  "dependencies": {
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18"
+  }
+}
