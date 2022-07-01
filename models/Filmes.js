@@ -1,14 +1,13 @@
 import mongoose from 'mongoose'
-import { Long } from 'bson';
 
 const filmesSchemma = new mongoose.Schema(
     {
-        id: { type: Long, required: true },
+        id: { type: String},
         titulo: { type: String, required: true },
         descricao: { type: String },
         autor: { type: String }
-    },{
-        versionKey:false
+    }, {
+        versionKey: false
     }
 )
 
