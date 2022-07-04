@@ -45,6 +45,18 @@ class FilmesController {
         })
     }
 
+    static excluiFilme = (req, res) => {
+        const id = req.params.id;
+
+        filmes.findByIdAndDelete(id, (err)=>{
+            if(err){
+                res.status(500).send({message:err.message})
+            }else{
+                res.status(200).send({message:'Filme excluido com sucesso'})
+            }
+        })
+    }
+
 
 }
 
