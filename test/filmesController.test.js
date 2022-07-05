@@ -1,7 +1,14 @@
-import filmesController from '../controllers/filmesController.js'
-import filmes from '../models/Filmes.js'
+import FilmesController from '../controllers/filmesController.js'
+import { describe } from 'jest-circus';
+import { expect } from 'expect';
 
-test('listar filmes, traz todos os filmes', () => {
-    expect(filmesController.listarFilmes)
-        .toBe(filmes);
-});
+const filmes = FilmesController;
+
+describe('cadastraFilmes::', () => {
+    it('deve ser uma função', () => {
+        expect(typeof filmes).toBe('function')
+    })
+    it('deve cadastrar um filme', () => {
+        expect()
+    })
+})
